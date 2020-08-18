@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17C6B36124EB16CA00F68878 /* Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C6B36124EB16CA00F68878 /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C6B36424EB16CA00F68878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17C6B36624EB16CA00F68878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17C6B36824EB16CA00F68878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		17C6B36224EB16CA00F68878 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17C6B36124EB16CA00F68878 /* Project3.app */,
+				17C6B36124EB16CA00F68878 /* BetterRest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 			);
 			name = Project3;
 			productName = Project3;
-			productReference = 17C6B36124EB16CA00F68878 /* Project3.app */;
+			productReference = 17C6B36124EB16CA00F68878 /* BetterRest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -289,12 +289,13 @@
 				DEVELOPMENT_TEAM = U49XR48868;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Project3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.ashutoshwahane.Project3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ashutoshwahane.BetterRest;
+				PRODUCT_NAME = BetterRest;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,12 +310,13 @@
 				DEVELOPMENT_TEAM = U49XR48868;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Project3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.ashutoshwahane.Project3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ashutoshwahane.BetterRest;
+				PRODUCT_NAME = BetterRest;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
