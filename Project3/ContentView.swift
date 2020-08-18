@@ -9,52 +9,34 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    struct capsuleText: View {
+        var text : String
     
-    @State private var useRedText = true
-    
-    let myName = Text("Ashutosh Wahane")
-    var internetName : some View{
-    Text("Willskhlaifa")
+        var body: some View{
+            Text(text)
+            .font(.largeTitle)
+                .padding()
+            .background(Color.gray)
+            .foregroundColor(Color.white)
+            .clipShape(Capsule())
+        }
     }
+    
     
     var body: some View {
         
-        
-        VStack{
-            myName.foregroundColor(Color.red).font(.headline)
-            internetName.foregroundColor(Color.blue)
-                .font(.title)
+        VStack(spacing: 10){
+            capsuleText(text: "Ashutosh")
+            capsuleText(text: "Dancer")
         }
-            
-        
-//
-//        Button("Namaste Ashutosh"){
-//        // do nothing
-//            print(type(of: self.body))
-//        }
-//            .frame(width: 200, height: 200)
-//            .background(Color.red)
-//
-//        if self.useRedText{
-//            return Text("Hello Ashutosh")
-//                .background(Color.blue)
-//        }else{
-//            return Text("Hello Ashutosh")
-//                .background(Color.red)
-//        }
-            
         
         
-        
-//        Text("Hello, World!")
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-//            .background(Color.red)
-//            .edgesIgnoringSafeArea(.all)
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
     }
 }
