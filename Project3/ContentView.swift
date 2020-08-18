@@ -8,29 +8,51 @@
 
 import SwiftUI
 
-struct ContentView: View {
 
-    struct capsuleText: View {
-        var text : String
-    
-        var body: some View{
-            Text(text)
+struct Title: ViewModifier{
+    func body(content: Content) -> some View {
+        content
             .font(.largeTitle)
-                .padding()
-            .background(Color.gray)
-            .foregroundColor(Color.white)
-            .clipShape(Capsule())
+            .foregroundColor(.white)
+        .padding()
+            .background(Color.blue)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+struct WaterMark: ViewModifier {
+    
+    var text : String
+    func body(content: Content) -> some View {
+       ZStack(alignment: .bottomTrailing) {
+            content
+            Text(text)
+                .font(.caption)
+                .foregroundColor(.white)
+                .padding(5)
+                .background(Color.black)
         }
     }
-    
+}
+
+
+
+extension View{
+    func titleText() -> some View{
+        return modifier(Title())
+    }
+    func waterMark(with text: String) -> some View{
+        return modifier(WaterMark(text: text))
+    }
+}
+
+struct ContentView: View {
     
     var body: some View {
-        
-        VStack(spacing: 10){
-            capsuleText(text: "Ashutosh")
-            capsuleText(text: "Dancer")
-        }
-        
+    
+        Color.blue
+            .frame(width: 200, height: 200)
+        .waterMark(with: "Hi Ashutosh")
         
     }
 
